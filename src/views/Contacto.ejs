@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <%- include('./partials/head') %> <!-- Incluye tu archivo de encabezado -->
+    <link rel="stylesheet" href="/css/contacto.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <div class="layout">
+        <header>
+            <%- include('./partials/navigation') %> <!-- Barra de navegación -->
+        </header>
+
+        <main class="contacto-container">
+            <div class="container">
+                <h1 class="text-center my-4" id="typed-text" style="text-align: center;">Contacto</h1>
+
+                <!-- Formulario de contacto -->
+                <form action="/enviar-correo" method="POST">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="asunto" class="form-label">Asunto</label>
+                        <input type="text" class="form-control" id="asunto" name="asunto" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </main>
+        <%- include('./partials/boot') %>
+        <footer>
+            <%- include('./partials/footer') %> <!-- Pie de página -->
+        </footer>
+    </div>
+
+    <script type="module" src="/assets/js/contacto.js"></script> <!-- Si necesitas scripts adicionales -->
+</body>
+</html>

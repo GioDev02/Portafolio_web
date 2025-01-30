@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <%- include('./partials/head') %>
+</head>
+<body>
+    <div class="layout">
+        <header>
+            <%- include('./partials/navigation') %>
+        </header>
+
+        <main class="bodyindex-container">
+            <%- include('./partials/bodyindex') %>   
+            <div class="text-center mt-4">
+                <img src="/assets/img/foto2.png" class="rounded-circle img-fluid img-hover" alt="Mi imagen" style="width: 200px;">
+              </div>
+        </main>
+        <%- include('./partials/boot') %>
+        <footer>
+            <%- include('./partials/footer') %>
+        </footer>
+    </div>
+<script src="/assets/js/bodyindex.js" > </script>
+</body>
+</html>
