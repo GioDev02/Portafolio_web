@@ -1,0 +1,41 @@
+.navbar-custom {
+    background-color: #5B5B79 ;
+}
+/* Estilo para el hover en los elementos del navbar */
+.navbar-nav .nav-item {
+    position: relative;
+    transition: transform 0.3s ease, border 0.3s ease;
+  }
+  
+  .navbar-nav .nav-item:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+    border-bottom: 3px solid #ffffff; /* Agrega un borde blanco en la parte inferior */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #ffffff !important; /* Asegura que el texto sea blanco */
+    transition: color 0.3s ease, padding 0.3s ease;
+  }
+  
+  .navbar-nav .nav-item:hover .nav-link {
+    color: #f8f9fa !important; /* Cambia el color del texto cuando se pasa el ratón */
+  }
+  
+  /* Asegura que el navbar tenga un buen contraste */
+  /* .navbar-custom {
+    background-color: #343a40; /* Fondo oscuro para la navbar  }*/
+ 
+  
+  .navbar-custom .navbar-toggler-icon {
+    background-color: #ffffff; /* Icono del menú en color blanco */
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 10px 15px; /* Espaciado alrededor del texto */
+    font-size: 1.1rem; /* Tamaño de fuente ligeramente mayor */
+  }
+  
+  .navbar-nav .nav-item:hover {
+    cursor: pointer; /* Cursor en forma de puntero cuando se pasa el ratón sobre los elementos */
+  }
+  

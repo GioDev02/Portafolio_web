@@ -1,0 +1,157 @@
+/* Estilos generales */
+body {
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Imagen responsiva con hover */
+.img-hover {
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.img-hover:hover {
+    transform: scale(1.1); /* Agranda la imagen en hover */
+}
+
+/* Efecto de texto de máquina de escribir */
+#typed-text {
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    white-space: normal;
+    overflow: hidden;
+    width: 100%;
+    max-width: 80%;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: #5B5B79;
+}
+
+.navbar-nav .nav-item {
+    position: relative;
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.navbar-nav .nav-item:hover {
+    transform: scale(1.1); /* Agranda el item de la nav en hover */
+    border-bottom: 3px solid #ffffff; /* Efecto de borde */
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    transition: color 0.3s ease, padding 0.3s ease;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #f8f9fa !important; /* Cambia el color del texto al pasar el ratón */
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-size: 1.1rem;
+}
+
+.navbar-nav .nav-item:hover {
+    cursor: pointer; /* Cursor en forma de puntero */
+}
+
+/* Estilos de botones */
+button, .btn {
+    background-color: #5B5B79;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #4A4A62; /* Cambio de color de fondo en hover */
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+button:focus, .btn:focus {
+    outline: none; /* Eliminar el borde de enfoque */
+}
+
+/* Footer */
+footer {
+    background-color: #5B5B79;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 10px;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #f8f9fa;
+}
+
+/* Estilo para hacer todo responsivo */
+@media (max-width: 768px) {
+    .img-hover {
+        width: 150px; /* Tamaño de la imagen en pantallas medianas */
+    }
+    .navbar-nav .nav-link {
+        font-size: 1rem; /* Reducir el tamaño de fuente para pantallas medianas */
+    }
+    section {
+        height: auto; /* Ajustar la altura del contenedor */
+    }
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .img-hover {
+        width: 120px; /* Tamaño de la imagen en pantallas pequeñas */
+    }
+    .navbar-nav .nav-link {
+        font-size: 0.9rem; /* Ajuste de fuente más pequeño para pantallas pequeñas */
+    }
+    section {
+        padding: 10px;
+    }
+    footer {
+        padding: 10px 0; /* Ajuste del padding en footer para pantallas pequeñas */
+    }
+}
+
+/* Ajustes adicionales para mejorar la responsividad */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #5B5B79;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .navbar-nav .nav-link {
+        padding: 10px;
+    }
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+

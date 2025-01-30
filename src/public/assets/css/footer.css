@@ -1,0 +1,25 @@
+footer {
+    background-color: #5B5B79 !important;
+    color: white;
+    text-align: center;
+    padding: 0 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #5B5B79; /* Color de fondo personalizado */
+    color: white; /* Color del texto blanco */
+  }
+  
+  footer a {
+    color: white; /* Asegura que los enlaces dentro del footer también sean blancos */
+  }
+  
+  footer a:hover {
+    color: #f8f9fa; /* Cambia el color del enlace al pasar el ratón por encima */
+  }
+  

@@ -47,14 +47,14 @@ dist
 
 # Gatsby files
 .cache/
-public
+# public
 
 # vuepress build output
 .vuepress/dist
 
 # vue / cli-service build output
 dist/
-public/
+# public/
 
 # Storybook build outputs
 .out/

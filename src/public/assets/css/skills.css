@@ -1,0 +1,86 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Contenedor de habilidades */
+.skills-container {
+    padding: 40px 0;
+}
+
+/* Título de cada sección */
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Cuadrícula de habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Elementos de la cuadrícula */
+.skill-item {
+    text-align: center;
+    position: relative; /* Necesario para posicionar el texto encima de la imagen */
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto hover */
+.skill-item:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Estilo para las imágenes */
+.skill-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Estilo para el nombre que aparece sobre la imagen */
+.skill-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 5px 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    visibility: hidden;
+}
+
+/* Mostrar el texto cuando se hace hover */
+.skill-item:hover p {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Espaciado entre las secciones */
+.row {
+    margin-bottom: 40px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}

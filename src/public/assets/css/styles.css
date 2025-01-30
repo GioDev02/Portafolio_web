@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #E5E5FB ; 
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+
+  /*BOT*/
+  .bot-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 60px;
+    height: 60px;
+    background-color: #2c82e4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Estilo del iframe oculto */
+.bot-container iframe {
+    width: 350px;
+    height: 430px;
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    bottom: 60px; /* Justo encima del botón */
+    right: 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Mostrar iframe cuando el contenedor está activo */
+.bot-container.active iframe {
+    display: block;
+}
+
+/* Icono del bot (puedes poner una imagen o un icono aquí) */
+.bot-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot-icon::before {
+    content: "\1F916"; /* Emoji de robot */
+    font-size: 24px;
+}

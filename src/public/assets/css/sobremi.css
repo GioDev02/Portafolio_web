@@ -1,0 +1,90 @@
+/* Estilos generales para todo el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Fondo que tenías antes */
+    color: #343a40; /* Color de texto para mantener el contraste */
+    margin: 0;
+}
+
+/* Contenedor principal */
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Título principal */
+#programador-text {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/* Estilos de texto */
+.text-start {
+    text-align: left !important;
+}
+
+/* Contenedor de la sección con el contenido de texto */
+.main-content p {
+    text-align: justify;
+}
+
+/* Sección ¿Qué puedo aportar? */
+ul.list-unstyled {
+    list-style-type: disc;
+    margin-left: 0;
+    padding-left: 1rem;
+}
+
+ul.list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+
+/* Asegura que la lista tenga el mismo estilo que el texto original */
+.lead {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+/* Estilos para el bloque que contiene el contenido principal */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Imagen y slider */
+#imageSlider {
+    width: 100%;
+}
+
+.carousel-inner .carousel-item {
+    text-align: center;
+}
+
+.carousel-inner img {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+/* Media Queries para hacerlo responsive */
+@media (max-width: 767px) {
+    #programador-text {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .text-start {
+        text-align: center !important;
+    }
+}
